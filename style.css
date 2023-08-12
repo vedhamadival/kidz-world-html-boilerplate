@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+.Top{
+    display: flex;
+    flex-direction: row;
+    font-weight: 900;
+    justify-content: space-between;
+    align-content: space-between;
+    padding:20px;
+}
+.bar{
+    margin-left:30px;
+
+}
+.start{
+    background-image: url('https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/kw-background.png?raw=true');
+    background-size: cover;
+    font-size: 70px;
+    font-weight: 700;
+    color:white;
+    text-align: justify;
+}
+.books{
+    display: flex;
+    margin-left: 10px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.Games{
+    display: flex;
+    gap: 10px;
+    margin-left: 50px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.Made{
+    display: flex;
+    gap: 10px;
+    margin-left: 50px;
+    padding-bottom: 70px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+button{
+    background-color: rgb(12, 78, 246);
+    color:white;
+    font-weight: 900;
+    height:fit-content;
+    padding:5px;
+    border-radius: 5px;
+    border: none;
+    justify-content:flex-end;
+}
+.text{
+    margin-left:70px;
+    font-weight: 900;
+}
+.end{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.end img{
+    height: 180px;
+    border-radius: 50%;
+}
