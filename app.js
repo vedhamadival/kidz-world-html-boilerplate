@@ -76,6 +76,8 @@ var prods=[
     }
 ]
 
+
+
 // Updating the cart
 function updateCart() {
     let count= 0;
@@ -98,7 +100,8 @@ function updateCart() {
         whatsappApi+="%0A" +ele.name + "%20" +ele.quantity; 
       }
     })
-    whatsappApi+=  "0A" + "The total amount is $" +finalprice+ ".";
+    updateprice();
+    whatsappApi+= "%0A" + "The total amount is $" +finalprice+ ".";
   }
 
   var whatsappApi= ("https://api.whatsapp.com/send?phone=918838821215&text=Order%20details:");
