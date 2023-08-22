@@ -91,9 +91,26 @@ function updateCart() {
     };
   }
 
+  function whatsappdata(){
+    prods.forEach((ele)=>{
+      if(ele.quantity!==0){
+        console.log(ele)
+        whatsappApi+="%0A" +ele.name + "%20" +ele.quantity; 
+      }
+    })
+    whatsappApi+=  "0A" + "The total amount is $" +finalprice+ ".";
+  }
+
+  var whatsappApi= ("https://api.whatsapp.com/send?phone=918838821215&text=Order%20details:");
+
 
 //updating the console
 cart.addEventListener('click',function(){
+
+
+    whatsappdata();
+    window.open(whatsappApi);
+
         for (let index = 0; index < prods.length; index++) {
           if (prods[index].quantity != 0) {
             console.log(
@@ -117,6 +134,10 @@ function updateprice(){
     }
     console.log("The total amount is $" +finalprice+ ".")
 }
+
+
+
+
 
 
 
