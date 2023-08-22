@@ -14,7 +14,6 @@
 }
 .bar{
     margin-left:30px;
-
 }
 .start{
     background-image: url('https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/kw-background.png?raw=true');
@@ -28,14 +27,18 @@
     display: flex;
     margin-left: 10px;
     padding-bottom: 50px;
+    padding-left:100px;
+    padding-right: 100px;
     justify-content: space-evenly;
     align-content: center;
 }
 .Games{
     display: flex;
-    gap: 10px;
+    gap: 100px;
     margin-left: 50px;
     padding-bottom: 50px;
+    padding-left:100px;
+    padding-right: 100px;
     justify-content: space-evenly;
     align-content: center;
 }
@@ -44,10 +47,12 @@
     gap: 10px;
     margin-left: 50px;
     padding-bottom: 70px;
+    padding-left:100px;
+    padding-right: 100px;
     justify-content: space-evenly;
     align-content: center;
 }
-button{
+.button{
     background-color: rgb(12, 78, 246);
     color:white;
     font-weight: 900;
@@ -58,7 +63,11 @@ button{
     justify-content:flex-end;
     align-items: flex-end;
 }
+/* button:hover{
+    background-color: rgb(110, 110, 237);
+} */
 .text{
+    padding-left:90px;
     margin-left:70px;
     font-weight: 900;
 }
@@ -71,6 +80,7 @@ button{
 }
 .end img{
     height: 180px;
+    width:180px;
     border-radius: 50%;
 }
 
